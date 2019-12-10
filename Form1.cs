@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using MetodoTransporte.Forms;
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using MetodoTransporte.Forms;
 
 namespace MetodoTransporte
-{   
+{
     public partial class Form1 : Form
     {
         FrmBodegasClientes FrmBodCli = new FrmBodegasClientes();
@@ -22,15 +16,34 @@ namespace MetodoTransporte
             InitializeComponent();
         }
 
+        Control ctl = new Control(); //Variable usada para cambiar el backcolor del MdiClient
+
         private void Form1_Load(object sender, EventArgs e)
         {
+            //Se encarga de cambiar el color del MdiClient
+            foreach (Control ctl in this.Controls)
+            {
+                try
+                {
+                    if (ctl is MdiClient)
+                    {
+                        ctl.BackColor = Color.White;
+                    }
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+            }
+
             this.FrmBodCli.MdiParent = this;
             this.FrmSim.MdiParent = this;
             this.FrmResult.MdiParent = this;
             FrmBodCli.Show();
         }
 
-        private Boolean Cerrar()
+        //Valida si los tres formularios están cerrados
+        private Boolean Cerrado()
         {
             bool Cerrado;
             if (!this.FrmBodCli.Visible && !this.FrmSim.Visible && !this.FrmResult.Visible)
@@ -45,25 +58,28 @@ namespace MetodoTransporte
             return Cerrado;
         }
 
+        //Abre formulario
         private void bodegasClientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Cerrar())
+            if (Cerrado())
             {
                 this.FrmBodCli.Visible = true;
             }
         }
 
+        //Abre formulario
         private void simulaciónToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Cerrar())
+            if (Cerrado())
             {
                 this.FrmSim.Visible = true;
             }
         }
 
+        //Abre formulario
         private void resultadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Cerrar())
+            if (Cerrado())
             {
                 this.FrmResult.Visible = true;
             }
