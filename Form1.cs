@@ -72,6 +72,8 @@ namespace MetodoTransporte
         {
             if (Cerrado())
             {
+                this.FrmSim.RecibirPrecioKM(this.FrmBodCli.varPrecioKM);
+                this.FrmSim.RecibirDatos(this.FrmBodCli.DatosTabla);
                 this.FrmSim.Visible = true;
             }
         }

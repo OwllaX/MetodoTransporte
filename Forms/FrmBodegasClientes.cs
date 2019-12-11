@@ -137,12 +137,14 @@ namespace MetodoTransporte
             }
         }
 
+        private double PrecioKm = 0;
+
         //Agrega el precio por kilometro establecido en el label
         private void BtnPrecioKm_Click(object sender, EventArgs e)
         {
             if (TxtPrecioKm.Text != "")
             {
-                double PrecioKm = double.Parse(TxtPrecioKm.Text);
+                PrecioKm = double.Parse(TxtPrecioKm.Text);
                 TxtPrecioKm.Text = "";
                 LPrecioKm.Text = "Precio/KM: " + PrecioKm;
             }
@@ -255,5 +257,9 @@ namespace MetodoTransporte
                 throw;
             }
         }
+
+        public DataGridView DatosTabla => DgvMetodo;
+
+        public double varPrecioKM => this.PrecioKm;
     }
 }

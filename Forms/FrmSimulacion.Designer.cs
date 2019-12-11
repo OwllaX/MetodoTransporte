@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnPrueba = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCerrar
@@ -44,6 +45,16 @@
             this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // btnPrueba
+            // 
+            this.btnPrueba.Location = new System.Drawing.Point(448, 254);
+            this.btnPrueba.Name = "btnPrueba";
+            this.btnPrueba.Size = new System.Drawing.Size(75, 23);
+            this.btnPrueba.TabIndex = 2;
+            this.btnPrueba.Text = "btnPrueba";
+            this.btnPrueba.UseVisualStyleBackColor = true;
+            this.btnPrueba.Click += new System.EventHandler(this.btnPrueba_Click);
+            // 
             // FrmSimulacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -51,6 +62,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1924, 1041);
             this.ControlBox = false;
+            this.Controls.Add(this.btnPrueba);
             this.Controls.Add(this.btnCerrar);
             this.Name = "FrmSimulacion";
             this.Text = "Simulación";
@@ -62,5 +74,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnPrueba;
     }
 }
