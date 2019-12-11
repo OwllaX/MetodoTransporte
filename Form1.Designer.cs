@@ -31,7 +31,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.bodegasClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.simulaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.resultadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -39,8 +38,7 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bodegasClientesToolStripMenuItem,
-            this.simulaciónToolStripMenuItem,
-            this.resultadosToolStripMenuItem});
+            this.simulaciónToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -60,13 +58,6 @@
             this.simulaciónToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.simulaciónToolStripMenuItem.Text = "Simulación";
             this.simulaciónToolStripMenuItem.Click += new System.EventHandler(this.simulaciónToolStripMenuItem_Click);
-            // 
-            // resultadosToolStripMenuItem
-            // 
-            this.resultadosToolStripMenuItem.Name = "resultadosToolStripMenuItem";
-            this.resultadosToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
-            this.resultadosToolStripMenuItem.Text = "Resultados";
-            this.resultadosToolStripMenuItem.Click += new System.EventHandler(this.resultadosToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -92,7 +83,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem bodegasClientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem simulaciónToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem resultadosToolStripMenuItem;
     }
 }
 

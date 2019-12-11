@@ -9,7 +9,6 @@ namespace MetodoTransporte
     {
         FrmBodegasClientes FrmBodCli = new FrmBodegasClientes();
         FrmSimulacion FrmSim = new FrmSimulacion();
-        FrmResultados FrmResult = new FrmResultados();
 
         public Form1()
         {
@@ -38,15 +37,17 @@ namespace MetodoTransporte
 
             this.FrmBodCli.MdiParent = this;
             this.FrmSim.MdiParent = this;
-            this.FrmResult.MdiParent = this;
             FrmBodCli.Show();
         }
 
-        //Valida si los tres formularios están cerrados
+        /// <summary>
+        /// Valida si los tres formularios están cerrados.
+        /// </summary>
+        /// <returns></returns>
         private Boolean Cerrado()
         {
             bool Cerrado;
-            if (!this.FrmBodCli.Visible && !this.FrmSim.Visible && !this.FrmResult.Visible)
+            if (!this.FrmBodCli.Visible && !this.FrmSim.Visible)
             {
                 Cerrado = true;
             }
@@ -75,15 +76,6 @@ namespace MetodoTransporte
                 this.FrmSim.RecibirPrecioKM(this.FrmBodCli.varPrecioKM);
                 this.FrmSim.RecibirDatos(this.FrmBodCli.DatosTabla);
                 this.FrmSim.Visible = true;
-            }
-        }
-
-        //Abre formulario
-        private void resultadosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (Cerrado())
-            {
-                this.FrmResult.Visible = true;
             }
         }
     }

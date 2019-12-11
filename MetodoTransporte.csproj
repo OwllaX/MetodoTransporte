@@ -58,12 +58,6 @@
     <Compile Include="Forms\FrmBodegasClientes.Designer.cs">
       <DependentUpon>FrmBodegasClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmResultados.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmResultados.Designer.cs">
-      <DependentUpon>FrmResultados.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FrmSimulacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,9 +71,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmBodegasClientes.resx">
       <DependentUpon>FrmBodegasClientes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmResultados.resx">
-      <DependentUpon>FrmResultados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmSimulacion.resx">
       <DependentUpon>FrmSimulacion.cs</DependentUpon>
