@@ -57,12 +57,12 @@
             // TxtSimulacion
             // 
             this.TxtSimulacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSimulacion.Location = new System.Drawing.Point(221, 105);
+            this.TxtSimulacion.Location = new System.Drawing.Point(22, 81);
             this.TxtSimulacion.Multiline = true;
             this.TxtSimulacion.Name = "TxtSimulacion";
             this.TxtSimulacion.ReadOnly = true;
             this.TxtSimulacion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.TxtSimulacion.Size = new System.Drawing.Size(865, 419);
+            this.TxtSimulacion.Size = new System.Drawing.Size(698, 406);
             this.TxtSimulacion.TabIndex = 3;
             this.TxtSimulacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -70,7 +70,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(336, 12);
+            this.label1.Location = new System.Drawing.Point(249, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(210, 42);
             this.label1.TabIndex = 4;
@@ -80,7 +80,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1120, 241);
+            this.label2.Location = new System.Drawing.Point(737, 227);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(179, 19);
             this.label2.TabIndex = 5;
@@ -89,7 +89,7 @@
             // TxtCostoRuta
             // 
             this.TxtCostoRuta.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCostoRuta.Location = new System.Drawing.Point(1324, 234);
+            this.TxtCostoRuta.Location = new System.Drawing.Point(938, 224);
             this.TxtCostoRuta.Name = "TxtCostoRuta";
             this.TxtCostoRuta.Size = new System.Drawing.Size(100, 26);
             this.TxtCostoRuta.TabIndex = 6;
@@ -97,7 +97,7 @@
             // TxtInventario
             // 
             this.TxtInventario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtInventario.Location = new System.Drawing.Point(1324, 280);
+            this.TxtInventario.Location = new System.Drawing.Point(938, 270);
             this.TxtInventario.Name = "TxtInventario";
             this.TxtInventario.Size = new System.Drawing.Size(100, 26);
             this.TxtInventario.TabIndex = 8;
@@ -106,7 +106,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1120, 283);
+            this.label3.Location = new System.Drawing.Point(737, 269);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(155, 19);
             this.label3.TabIndex = 7;
@@ -116,7 +116,7 @@
             // 
             this.LInventario.AutoSize = true;
             this.LInventario.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LInventario.Location = new System.Drawing.Point(1441, 285);
+            this.LInventario.Location = new System.Drawing.Point(1055, 275);
             this.LInventario.Name = "LInventario";
             this.LInventario.Size = new System.Drawing.Size(176, 16);
             this.LInventario.TabIndex = 9;
@@ -125,7 +125,7 @@
             // TxtTotal
             // 
             this.TxtTotal.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTotal.Location = new System.Drawing.Point(1324, 324);
+            this.TxtTotal.Location = new System.Drawing.Point(938, 314);
             this.TxtTotal.Name = "TxtTotal";
             this.TxtTotal.Size = new System.Drawing.Size(100, 26);
             this.TxtTotal.TabIndex = 11;
@@ -134,7 +134,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(1120, 327);
+            this.label4.Location = new System.Drawing.Point(737, 313);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(159, 19);
             this.label4.TabIndex = 10;
@@ -146,7 +146,7 @@
             this.BtnSimulacion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnSimulacion.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSimulacion.Image = global::MetodoTransporte.Properties.Resources.iconfinder_Cancel_Icon_919983;
-            this.BtnSimulacion.Location = new System.Drawing.Point(528, 544);
+            this.BtnSimulacion.Location = new System.Drawing.Point(242, 513);
             this.BtnSimulacion.Name = "BtnSimulacion";
             this.BtnSimulacion.Size = new System.Drawing.Size(233, 68);
             this.BtnSimulacion.TabIndex = 2;

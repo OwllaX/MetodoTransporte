@@ -70,7 +70,7 @@
             // TxtBodegas
             // 
             this.TxtBodegas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBodegas.Location = new System.Drawing.Point(129, 107);
+            this.TxtBodegas.Location = new System.Drawing.Point(344, 111);
             this.TxtBodegas.Name = "TxtBodegas";
             this.TxtBodegas.Size = new System.Drawing.Size(100, 29);
             this.TxtBodegas.TabIndex = 2;
@@ -78,10 +78,10 @@
             // 
             // BtnBodega
             // 
-            this.BtnBodega.BackColor = System.Drawing.SystemColors.Desktop;
+            this.BtnBodega.BackColor = System.Drawing.Color.Orange;
             this.BtnBodega.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnBodega.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBodega.Location = new System.Drawing.Point(235, 103);
+            this.BtnBodega.Location = new System.Drawing.Point(450, 107);
             this.BtnBodega.Name = "BtnBodega";
             this.BtnBodega.Size = new System.Drawing.Size(179, 38);
             this.BtnBodega.TabIndex = 3;
@@ -91,10 +91,10 @@
             // 
             // BtnCliente
             // 
-            this.BtnCliente.BackColor = System.Drawing.SystemColors.Desktop;
+            this.BtnCliente.BackColor = System.Drawing.Color.Orange;
             this.BtnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCliente.Location = new System.Drawing.Point(235, 159);
+            this.BtnCliente.Location = new System.Drawing.Point(450, 163);
             this.BtnCliente.Name = "BtnCliente";
             this.BtnCliente.Size = new System.Drawing.Size(179, 38);
             this.BtnCliente.TabIndex = 5;
@@ -105,7 +105,7 @@
             // TxtCliente
             // 
             this.TxtCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCliente.Location = new System.Drawing.Point(129, 163);
+            this.TxtCliente.Location = new System.Drawing.Point(344, 167);
             this.TxtCliente.Name = "TxtCliente";
             this.TxtCliente.Size = new System.Drawing.Size(100, 29);
             this.TxtCliente.TabIndex = 4;
@@ -128,16 +128,16 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DgvMetodo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DgvMetodo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvMetodo.Location = new System.Drawing.Point(129, 241);
+            this.DgvMetodo.Location = new System.Drawing.Point(46, 241);
             this.DgvMetodo.Name = "DgvMetodo";
-            this.DgvMetodo.Size = new System.Drawing.Size(1640, 569);
+            this.DgvMetodo.Size = new System.Drawing.Size(1197, 404);
             this.DgvMetodo.TabIndex = 6;
             this.DgvMetodo.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvMetodo_CellValueChanged);
             // 
             // TxtPrecioKm
             // 
             this.TxtPrecioKm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPrecioKm.Location = new System.Drawing.Point(638, 107);
+            this.TxtPrecioKm.Location = new System.Drawing.Point(785, 112);
             this.TxtPrecioKm.Name = "TxtPrecioKm";
             this.TxtPrecioKm.Size = new System.Drawing.Size(100, 29);
             this.TxtPrecioKm.TabIndex = 7;
@@ -145,10 +145,10 @@
             // 
             // BtnPrecioKm
             // 
-            this.BtnPrecioKm.BackColor = System.Drawing.SystemColors.Desktop;
+            this.BtnPrecioKm.BackColor = System.Drawing.Color.Orange;
             this.BtnPrecioKm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnPrecioKm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPrecioKm.Location = new System.Drawing.Point(599, 142);
+            this.BtnPrecioKm.Location = new System.Drawing.Point(746, 147);
             this.BtnPrecioKm.Name = "BtnPrecioKm";
             this.BtnPrecioKm.Size = new System.Drawing.Size(179, 38);
             this.BtnPrecioKm.TabIndex = 8;
@@ -160,7 +160,7 @@
             // 
             this.LPrecioKm.AutoSize = true;
             this.LPrecioKm.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LPrecioKm.Location = new System.Drawing.Point(635, 183);
+            this.LPrecioKm.Location = new System.Drawing.Point(782, 188);
             this.LPrecioKm.Name = "LPrecioKm";
             this.LPrecioKm.Size = new System.Drawing.Size(82, 13);
             this.LPrecioKm.TabIndex = 9;
@@ -172,7 +172,7 @@
             this.BtnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnRestaurar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRestaurar.Image = global::MetodoTransporte.Properties.Resources.iconfinder_ui_26_5344426;
-            this.BtnRestaurar.Location = new System.Drawing.Point(912, 125);
+            this.BtnRestaurar.Location = new System.Drawing.Point(1008, 130);
             this.BtnRestaurar.Name = "BtnRestaurar";
             this.BtnRestaurar.Size = new System.Drawing.Size(179, 55);
             this.BtnRestaurar.TabIndex = 10;

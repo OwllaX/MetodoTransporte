@@ -301,7 +301,6 @@ namespace MetodoTransporte
         /// <returns></returns>
         private bool ValidarRegistroDGV()
         {
-            bool validar = false;
             for (int i = 0; i < DgvMetodo.ColumnCount; i++)
             {
                 foreach (DataGridViewRow item in DgvMetodo.Rows)
