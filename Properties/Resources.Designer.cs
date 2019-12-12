@@ -63,6 +63,16 @@ namespace MetodoTransporte.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Cancel_Icon_919983 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Cancel_Icon_919983", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_ui_26_5344426 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_ui_26_5344426", resourceCulture);

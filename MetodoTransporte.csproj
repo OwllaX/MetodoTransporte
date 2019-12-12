@@ -99,7 +99,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Iconos\iconfinder_Cancel_Icon_919983.png" />
     <Content Include="Iconos\iconfinder_ui_26_5344426.png" />
+    <Content Include="Iconos\UTNLogo.ico" />
+    <Content Include="Iconos\UTNLogo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

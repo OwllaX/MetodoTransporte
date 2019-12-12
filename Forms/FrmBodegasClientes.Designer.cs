@@ -117,7 +117,7 @@
             this.DgvMetodo.AllowUserToDeleteRows = false;
             this.DgvMetodo.AllowUserToResizeColumns = false;
             this.DgvMetodo.AllowUserToResizeRows = false;
-            this.DgvMetodo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.DgvMetodo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DgvMetodo.BackgroundColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Blue;
@@ -132,6 +132,7 @@
             this.DgvMetodo.Name = "DgvMetodo";
             this.DgvMetodo.Size = new System.Drawing.Size(1640, 569);
             this.DgvMetodo.TabIndex = 6;
+            this.DgvMetodo.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvMetodo_CellValueChanged);
             // 
             // TxtPrecioKm
             // 

@@ -26,7 +26,14 @@ namespace MetodoTransporte
         //Hace que se cierre sin liberar recursos el formulario
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
+            if (ValidarCierre())
+            {
+                this.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("No se han ingresado todos los datos.", "Datos Incompletos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }            
         }
 
         //Permite que solo se inserte números en los campos
@@ -261,5 +268,51 @@ namespace MetodoTransporte
         public DataGridView DatosTabla => DgvMetodo;
 
         public double varPrecioKM => this.PrecioKm;
+
+        private void DgvMetodo_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            int a;
+            if (!int.TryParse(Convert.ToString(DgvMetodo.Rows[e.RowIndex].Cells[e.ColumnIndex].Value),out a) && Convert.ToString(DgvMetodo.Rows[e.RowIndex].Cells[e.ColumnIndex].Value) != "|____________" && e.ColumnIndex != 0)
+            {
+                DgvMetodo.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = 0;
+            }
+        }
+
+        /// <summary>
+        /// Método que valida el registro de todos los datos.
+        /// </summary>
+        /// <returns></returns>
+        private bool ValidarCierre()
+        {
+            if (DgvMetodo.Rows.Count != 0 && DgvMetodo.Columns.Count != 0 && PrecioKm != 0 && ValidarRegistroDGV())
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+
+        /// <summary>
+        /// Método que revisa el registro de todas las celdas.
+        /// </summary>
+        /// <returns></returns>
+        private bool ValidarRegistroDGV()
+        {
+            bool validar = false;
+            for (int i = 0; i < DgvMetodo.ColumnCount; i++)
+            {
+                foreach (DataGridViewRow item in DgvMetodo.Rows)
+                {
+                    if (Convert.ToString(item.Cells[i].Value) == "")
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
     }
 }

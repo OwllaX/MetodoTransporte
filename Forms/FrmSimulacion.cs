@@ -43,14 +43,6 @@ namespace MetodoTransporte.Forms
 
         private List<double> InventarioDemanda;
 
-        //SOLO PARA TEST
-        private void btnPrueba_Click(object sender, EventArgs e)
-        {
-            InventarioCoordenadas();
-            Ruta();
-        }
-
-
         /// <summary>
         /// Saca el resultado de inventario y descubre las coordenadas de Ruta.
         /// </summary>
@@ -84,7 +76,23 @@ namespace MetodoTransporte.Forms
             {
                 DgvMetodo.Rows.Add();
                 DgvMetodo.Rows[(DgvMetodo.RowCount - 1)].Cells[(DgvMetodo.ColumnCount - 1)].Value = (Demanda - Disponibilidad);
+                DgvMetodo.Rows[(DgvMetodo.RowCount - 1)].Cells[(DgvMetodo.ColumnCount - 1)].Style.Font = new Font("Arial", 10F, FontStyle.Bold);
+                DgvMetodo.Rows[(DgvMetodo.RowCount - 1)].Cells[(DgvMetodo.ColumnCount - 1)].Style.BackColor = Color.Red;
+                DgvMetodo.Rows[(DgvMetodo.RowCount - 1)].Cells[(DgvMetodo.ColumnCount - 1)].Style.ForeColor = Color.White;
                 DgvMetodo.Rows[(DgvMetodo.RowCount - 1)].Cells[0].Value = "BodegaFIC";
+                DgvMetodo.Rows[(DgvMetodo.RowCount - 1)].Cells[0].Style.Font = new Font("Arial", 10F, FontStyle.Bold);
+                for (int i = 0; i < DgvMetodo.ColumnCount; i++)
+                {
+                    if (Convert.ToString(DgvMetodo.Rows[(DgvMetodo.RowCount - 1)].Cells[i].Value) == "")
+                    {
+                        DgvMetodo.Rows[(DgvMetodo.RowCount - 1)].Cells[i].Value = 0;
+                    }
+                    int a;
+                    if (int.TryParse(Convert.ToString(DgvMetodo.Rows[(DgvMetodo.RowCount - 1)].Cells[i].Value), out a))
+                    {
+                        DgvMetodo.Rows[(DgvMetodo.RowCount - 1)].Cells[i].ReadOnly = true;
+                    }
+                }
                 DgvMetodo.Rows.AddCopy((DgvMetodo.RowCount - 2));
                 foreach (DataGridViewColumn item in DgvMetodo.Columns)
                 {
@@ -181,6 +189,8 @@ namespace MetodoTransporte.Forms
             {
                 String[] Coor = Coordenadas.ElementAt(i).Split(',');
                 TxtSimulacion.Text += Convert.ToString(DgvMetodo.Rows[Convert.ToInt32(Coor[0])].Cells[0].Value) + "=====>" + Convert.ToString(DgvMetodo.Columns[(Convert.ToInt32(Coor[1]) + 1)].HeaderText) + "\r\n";
+                TxtSimulacion.Text += Convert.ToString("Ofrece la cantidad de: " + InventarioDemanda.ElementAt(i)) + "\r\n";
+                TxtSimulacion.Text += "_____________________________________" + "\r\n";
                 PKilometros.Add((Convert.ToDouble(DgvMetodo.Rows[Convert.ToInt32(Coor[0])].Cells[(Convert.ToInt32(Coor[1]) + 1)].Value) * this.PrecioKm));
             }
 
@@ -206,6 +216,12 @@ namespace MetodoTransporte.Forms
                 LInventario.Text = "No satisface la Demanda.";
             }
             
+        }
+
+        private void BtnSimulacion_Click(object sender, EventArgs e)
+        {
+            InventarioCoordenadas();
+            Ruta();
         }
     }
 }

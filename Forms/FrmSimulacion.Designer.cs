@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnPrueba = new System.Windows.Forms.Button();
             this.TxtSimulacion = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,6 +38,7 @@
             this.LInventario = new System.Windows.Forms.Label();
             this.TxtTotal = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.BtnSimulacion = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCerrar
@@ -54,22 +54,14 @@
             this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // btnPrueba
-            // 
-            this.btnPrueba.Location = new System.Drawing.Point(12, 68);
-            this.btnPrueba.Name = "btnPrueba";
-            this.btnPrueba.Size = new System.Drawing.Size(75, 23);
-            this.btnPrueba.TabIndex = 2;
-            this.btnPrueba.Text = "btnPrueba";
-            this.btnPrueba.UseVisualStyleBackColor = true;
-            this.btnPrueba.Click += new System.EventHandler(this.btnPrueba_Click);
-            // 
             // TxtSimulacion
             // 
             this.TxtSimulacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtSimulacion.Location = new System.Drawing.Point(221, 105);
             this.TxtSimulacion.Multiline = true;
             this.TxtSimulacion.Name = "TxtSimulacion";
+            this.TxtSimulacion.ReadOnly = true;
+            this.TxtSimulacion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.TxtSimulacion.Size = new System.Drawing.Size(865, 419);
             this.TxtSimulacion.TabIndex = 3;
             this.TxtSimulacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -88,7 +80,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(218, 558);
+            this.label2.Location = new System.Drawing.Point(1120, 241);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(179, 19);
             this.label2.TabIndex = 5;
@@ -97,7 +89,7 @@
             // TxtCostoRuta
             // 
             this.TxtCostoRuta.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCostoRuta.Location = new System.Drawing.Point(403, 551);
+            this.TxtCostoRuta.Location = new System.Drawing.Point(1324, 234);
             this.TxtCostoRuta.Name = "TxtCostoRuta";
             this.TxtCostoRuta.Size = new System.Drawing.Size(100, 26);
             this.TxtCostoRuta.TabIndex = 6;
@@ -105,7 +97,7 @@
             // TxtInventario
             // 
             this.TxtInventario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtInventario.Location = new System.Drawing.Point(403, 596);
+            this.TxtInventario.Location = new System.Drawing.Point(1324, 280);
             this.TxtInventario.Name = "TxtInventario";
             this.TxtInventario.Size = new System.Drawing.Size(100, 26);
             this.TxtInventario.TabIndex = 8;
@@ -114,7 +106,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(242, 599);
+            this.label3.Location = new System.Drawing.Point(1120, 283);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(155, 19);
             this.label3.TabIndex = 7;
@@ -124,7 +116,7 @@
             // 
             this.LInventario.AutoSize = true;
             this.LInventario.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LInventario.Location = new System.Drawing.Point(509, 602);
+            this.LInventario.Location = new System.Drawing.Point(1441, 285);
             this.LInventario.Name = "LInventario";
             this.LInventario.Size = new System.Drawing.Size(176, 16);
             this.LInventario.TabIndex = 9;
@@ -133,7 +125,7 @@
             // TxtTotal
             // 
             this.TxtTotal.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTotal.Location = new System.Drawing.Point(403, 641);
+            this.TxtTotal.Location = new System.Drawing.Point(1324, 324);
             this.TxtTotal.Name = "TxtTotal";
             this.TxtTotal.Size = new System.Drawing.Size(100, 26);
             this.TxtTotal.TabIndex = 11;
@@ -142,11 +134,27 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(238, 648);
+            this.label4.Location = new System.Drawing.Point(1120, 327);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(159, 19);
             this.label4.TabIndex = 10;
             this.label4.Text = "El costo total es de:";
+            // 
+            // BtnSimulacion
+            // 
+            this.BtnSimulacion.BackColor = System.Drawing.Color.Chartreuse;
+            this.BtnSimulacion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnSimulacion.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSimulacion.Image = global::MetodoTransporte.Properties.Resources.iconfinder_Cancel_Icon_919983;
+            this.BtnSimulacion.Location = new System.Drawing.Point(528, 544);
+            this.BtnSimulacion.Name = "BtnSimulacion";
+            this.BtnSimulacion.Size = new System.Drawing.Size(233, 68);
+            this.BtnSimulacion.TabIndex = 2;
+            this.BtnSimulacion.Text = "Iniciar Simulación";
+            this.BtnSimulacion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnSimulacion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnSimulacion.UseVisualStyleBackColor = false;
+            this.BtnSimulacion.Click += new System.EventHandler(this.BtnSimulacion_Click);
             // 
             // FrmSimulacion
             // 
@@ -164,7 +172,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtSimulacion);
-            this.Controls.Add(this.btnPrueba);
+            this.Controls.Add(this.BtnSimulacion);
             this.Controls.Add(this.btnCerrar);
             this.Name = "FrmSimulacion";
             this.Text = "Simulación";
@@ -177,7 +185,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Button btnPrueba;
+        private System.Windows.Forms.Button BtnSimulacion;
         private System.Windows.Forms.TextBox TxtSimulacion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

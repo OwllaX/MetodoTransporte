@@ -121,4 +121,7 @@
   <data name="iconfinder_ui_26_5344426" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Iconos\iconfinder_ui_26_5344426.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="iconfinder_Cancel_Icon_919983" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Iconos\iconfinder_Cancel_Icon_919983.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
